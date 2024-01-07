@@ -1,0 +1,89 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace GrafSenCos
+{
+    public partial class Form1 : Form
+    {
+        private Color colorFondo;
+        private Color colorPrimerPlano;
+        Font fuente= new Font("Arial", 8);
+
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void btnDibujar_Click(object sender, EventArgs e)
+        {
+            Graphics g = picCuadro.CreateGraphics();
+            int X, Y;
+            double Y1;
+
+            g.Clear(Color.White);
+
+            //Pen que defina el color y el ancho de linea del elemento que se va a dibujar
+            Pen pluma = new Pen(Color.Black,2);
+
+            //Dibujar una línea horizontal desde las coordenadas 0, 150, 500, 150
+            g.DrawLine(pluma, 0, 200, 800, 200);
+
+            //Dibujar una línea vertical desde las coordenadas 250, 0, 250, 300
+            g.DrawLine(pluma, 400, 0, 400, 400);
+
+            //Dibujar divisiones en la vertical
+            Pen pluma2 = new Pen(Color.Black, 1);
+            for (Y=0; Y<=400; Y+=20) 
+            g.DrawLine(pluma2, 390, Y, 410, Y);
+
+            //Dibujar divisiones en la horizontal
+            for (X = 0; X <= 800; X += 20) 
+            g.DrawLine(pluma2, X, 190, X, 210);
+
+            SolidBrush brochaSolidaVerdeMar = new SolidBrush(Color.LightSeaGreen);
+            for (X = -360; X <= 360; X++ ) 
+            {
+                double X1 = (Double)X;
+
+                if (rbSeno.Checked == true)
+                {
+                    //Función Seno
+                    Y1 = Math.Sin(X1 * Math.PI / 180) * 200;
+                    Y = (int)Y1;
+                }
+
+                if (rbCoseno.Checked == true)
+                {
+                    //Función Coseno
+                    Y1 = Math.Cos(X1 * Math.PI / 180) * 200;
+                    Y = (int)Y1;
+                }
+                g.FillEllipse(brochaSolidaVerdeMar, X+400, 200-Y, 3, 3);
+
+                lstPuntos.Items.Add("X =" + X);
+                lstPuntos.Items.Add("Y =" + Y);
+                lstPuntos.Items.Add("...");
+            }
+        }
+        private void Form1_load(object sender, EventArgs e)
+        {
+            colorFondo = Color.White;
+            colorPrimerPlano = Color.Black;
+            picCuadro.BackColor = colorFondo;
+            rbSeno.Checked = true;
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+    }
+
+}

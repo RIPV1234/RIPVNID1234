@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Proyecto Técnico</title>
+</head>
+
+<body background="FondoAzulVerde.jpg">
+    <center><img src="girantescudo.gif" height="100" width="100"></center>
+    <h1><b><center><p>NICOLÁS INFANTE DÍAZ</p></center></b></h1>
+    <h2><b><center><p>Proyecto Técnico</p></center></b></h2>
+<h2><b><center><p>Ramsés Patiño 3ro "N"</h2></b></center></p>
+
+<table bordercolor="black">
+<tr>
+<td bgcolor="pink"><h1><a href="index.html"><center>Diseño y Desarrollo Web</a></td><td bgcolor="lime"><h1> <a href="pagprogramation.html"><center>Programación y Base de Datos</a></td><td bgcolor="salmon"><h1> <a href="pagsistemas.html"><center>Sistemas Operativos y Redes</a></td><td bgcolor="yellow"><h1> <a href="pagsoporte.html"><center>Soporte Técnico</a></td><td bgcolor="orange"><h1> <a href="pagofimatica.html"><center>Aplicaciones Ofimáticas Locales y en Línea</a></td>
+</tr>
+</table>
+</center>
+<br>
+<br>
+<br>
+
+   
+    <br>
+    <br>
+    <br>
+    <center>
+
+        <table>
+            <tr>
+                <th style="border: solid black; background-color: pink;" colspan="2"><h1>CÓDIGO QR</h1></th>
+            </tr>
+            <tr>
+                <td style="width: 500px; border: solid black; background-color: pink;">
+                    <p> Un código QR, que significa "Quick Response" o "Respuesta Rápida" en inglés, es un tipo de código de barras bidimensional que fue creado en 1994 por la compañía japonesa Denso Wave. Los códigos QR almacenan información de manera similar a los códigos de barras tradicionales, pero son capaces de contener mucha más información y se pueden escanear de manera más rápida.</p>
+
+                    <p>Un código QR consta de cuadrados negros dispuestos en un patrón sobre un fondo blanco. Puede almacenar diversos tipos de información, como texto, números, direcciones web, coordenadas geográficas, información de contacto, entre otros. Los códigos QR se escanean con la cámara de un dispositivo, como un teléfono inteligente o una tablet, utilizando una aplicación específica para leer códigos QR.</p>
+
+                    <p>Los códigos QR son ampliamente utilizados en diversas aplicaciones, como marketing, publicidad, seguimiento de productos, pagos móviles, ingreso a eventos, entre otros. Al escanear un código QR, el dispositivo puede interpretar la información almacenada en el código y realizar la acción correspondiente, como abrir un sitio web, mostrar información detallada, o realizar una transacción, dependiendo del contenido del código QR.</p>
+<h2><p><b><i><center><font color="red">Tipos:</font color="red"></center></i></b></p></h2>
+<p>Existen varios tipos de códigos QR, y cada uno tiene un propósito específico. Aquí algunos de los tipos más comunes:</p>
+
+<p>•	Códigos QR estándar: Estos son los códigos QR convencionales que pueden almacenar una variedad de datos, como texto, números, enlaces web, direcciones de correo electrónico, entre otros.</p>
+
+<p>•	Códigos QR dinámicos: A diferencia de los códigos QR estándar, los códigos dinámicos pueden ser editados y gestionados incluso después de haber sido creados. Esto permite cambiar la información que contienen sin necesidad de generar un nuevo código QR.</p>
+
+<p>•	Códigos QR en color: Aunque los códigos QR tradicionales son mayormente en blanco y negro, es posible crear códigos QR en color, siempre y cuando haya suficiente contraste entre los elementos oscuros y claros para que el escáner pueda leerlos correctamente.</p>
+<h2><p><b><i><center><font color="orangered">Cómo Crear Uno:</font color="orangered"></center></i></b></p></h2>
+<p>Crear un código QR es un proceso bastante sencillo y hay varias herramientas en línea que te permiten generar códigos QR de manera gratuita. Aquí te doy una guía básica para crear un código QR:</p>
+
+<p>•	Decide qué información quieres codificar: Antes de crear un código QR, determina qué tipo de información deseas incluir, como un enlace web, texto, información de contacto, etc.</p>
+
+<p>•	Selecciona una herramienta en línea: Hay varias herramientas en línea que te permiten generar códigos QR de forma gratuita. Algunas opciones populares incluyen QR Code Generator, QRStuff, entre otras.</p>
+
+<p>•	Ingresa la información: En la herramienta seleccionada, elige el tipo de contenido que deseas codificar (URL, texto, tarjeta de visita, etc.).</p>
+
+<p>•	Genera el código QR: Haz clic en el botón de generación o similar en la herramienta que estás utilizando.</p>
+
+<p>•	Descarga el código QR: Una vez generado, la herramienta te proporcionará el código QR. Puedes descargarlo en tu computadora como una imagen en formato PNG, JPEG u otro formato compatible.</p>
+
+                </td>
+                <td style="width: 500px; border: solid black; background-color: pink;">
+                    <center><img src="qrcode.png" width="450" height="350"></center>
+<center><img src="imgQRwpp.jpg" width="450" height="350"></center>
+                </td>
+            </tr>
+        </table>
+    </center>
+<br>
+<br>
+<br>
+<br>

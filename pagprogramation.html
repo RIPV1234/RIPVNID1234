@@ -1,0 +1,84 @@
+<Doctype html>
+<html>
+<head>
+    <title>Proyecto Técnico</title>
+    <style>
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+
+<body style="background-image: url('FondoProgramacion.jpg'); background-repeat: no-repeat; background-size: cover;">
+<center><img src="girantescudo.gif" height="100" width="100"></center>
+<h1><b><center><p>NICOLÁS INFANTE DÍAZ</h1></b></center></p>
+<h2><b><center><p>Proyecto Técnico</h2></b></center></p>
+<h2><b><center><p>Ramsés Patiño 3ro "N"</h2></b></center></p>
+<table bordercolor="black">
+<tr>
+<td bgcolor="pink"><h1><a href="index.html"><center>Diseño y Desarrollo Web</a></td> 
+<td bgcolor="lime" onclick="toggleDropdown()">
+    <h1>Programación y Base de Datos</h1>
+    <div class="dropdown-content" id="dropdownContent">
+       <a href="PrimerTrimestreProgramacion.html">Primer Trimestre</a>
+<a href="SegundoTrimestreProgramacion.html">Segundo Trimestre</a>
+                    <a href="TercerTrimestreProgramacion.html">Tercer Trimestre</a>
+                </div>
+    </div>
+</td>
+<td bgcolor="salmon"><h1><a href="pagsistemas.html"><center>Sistemas Operativos y Redes</a></td><td bgcolor="yellow"><h1> <a href="pagsoporte.html"><center>Soporte Técnico</a></td><td bgcolor="orange"><h1> <a href="pagofimatica.html"><center>Aplicaciones Ofimáticas Locales y en Línea</a></td>
+</tr>
+</table>
+</center>
+<br>
+<br>
+<br>
+<center><table>
+<tr>
+<th style="border: solid black; background-color: lime;" colspan="2"><h1>PROGRAMACIÓN Y BASE DE DATOS</h1></th>
+</tr>
+<tr>
+<td style="width: 500px; border: solid black; background-color: lime;"><p>La programación se refiere al proceso de escribir, diseñar y mantener un conjunto de instrucciones o algoritmos que se utilizan para controlar el funcionamiento de una computadora u otro dispositivo electrónico. Es un lenguaje mediante el cual los desarrolladores pueden comunicarse con las máquinas y decirles qué hacer.</p>
+
+<p>La programación implica la creación de programas de software utilizando un lenguaje de programación específico, como Python, Java, C++, JavaScript, entre otros. Estos programas están compuestos por una serie de que indican a la computadora cómo realizar una tarea específica.</p>
+
+<p>La programación se utiliza en una amplia variedad de campos y aplicaciones, desde el desarrollo de sitios web y aplicaciones móviles, hasta el diseño de sistemas de control de robots, inteligencia artificial, análisis de datos, desarrollo de videojuegos y mucho más.</p>
+<h2><p><b><i><center><font color="red">OBJETIVO</font color="red"></center></i></b></p></h2>
+<p>Analizar el trabajo docente y discente en el Módulo Formativo Programación y Base de
+Datos, mediante la reflexión, para realizar mejoras al proceso de enseñanza – aprendizaje.
+</p>
+</td>
+<td style="width: 500px; border: solid black; background-color: lime;"><center><img src="imgpagprogramation.jpeg" width="450" height="350"></center></td>
+</tr>
+<tr>
+<td style="border: solid black; background-color: lime;" colspan="2">
+<video width="1000" autoplay controls>
+<source src="Video Programacion.mp4" type="video/mp4">
+</td>
+</tr>
+</center>
+</video>
+</table></center>
+<script>
+        function toggleDropdown() {
+            var dropdownContent = document.getElementById("dropdownContent");
+            dropdownContent.style.display = (dropdownContent.style.display === "block") ? "none" : "block";
+        }
+    </script>
+</body>

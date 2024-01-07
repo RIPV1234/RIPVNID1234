@@ -1,0 +1,57 @@
+using System.Windows.Forms;
+
+namespace cnsVentasMensuales
+{
+    public partial class Form1 : Form
+    {
+     
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void btnDibujar_Click(object sender, EventArgs e)
+        {
+            Graphics g = picCuadro.CreateGraphics();
+            int X, Y;
+
+            g.Clear(Color.White);
+
+            // Pen para definir el color y el ancho de la línea
+            Pen pluma = new Pen(Color.Black, 2);
+
+            // Dibujar una línea vertical en x=1
+            g.DrawLine(pluma, 10, 0, 10, 400);
+
+            // Dibujar una línea horizontal desde las coordenadas 0, 350 hasta 800, 350
+            g.DrawLine(pluma, 0, 350, 800, 350);
+
+            // Obtener el valor límite desde el TextBox
+            if (int.TryParse(txtEnero.Text, out int limite))
+            {
+                // Asegurarse de que el límite esté dentro del rango de dibujo
+                limite = Math.Min(800, Math.Max(0, limite));
+
+                // Ajustar el límite al valor más cercano en las divisiones verticales (cada 100 unidades)
+                int divisionesVerticales = limite / 100;
+                int nuevaPosicion = divisionesVerticales * 100;
+
+                // Dibujar una línea vertical desde las coordenadas nuevaPosicion, 0 hasta nuevaPosicion, 400
+                g.DrawLine(pluma, nuevaPosicion, 0, nuevaPosicion, 400);
+
+                // Definir los puntos de inicio y final para la línea vertical
+                Point startPoint = new Point(picCuadro.Width / 100, 0);
+                Point endPoint = new Point(picCuadro.Width / 100, picCuadro.Height);
+            }
+
+            // Dibujar divisiones en la vertical
+            Pen pluma2 = new Pen(Color.Black, 1);
+            for (Y = 0; Y <= 400; Y += 100)
+                g.DrawLine(pluma2, 10, Y, 30, Y);
+
+            // Dibujar divisiones en la horizontal
+            for (X = 0; X <= 800; X += 100)
+                g.DrawLine(pluma2, X, 320, X, 350);
+        }
+    }
+}
